@@ -10,7 +10,7 @@ import Foundation
 
 class ViewModel: ObservableObject {
     @Published var imageURLString: String = "" // url of the dog image
-    @Published var breed: String = "" // breed of the dog displayed
+    @Published var breed: String = "" // breed of the dog displayed (the hidden answer)
     @Published var currentStreak: Int = 0 // current streak
     @Published var bestStreak: Int = 0 // longest streak
     @Published var guess: String = "" // the user's current guess
@@ -21,13 +21,6 @@ class ViewModel: ObservableObject {
     }
     
     /*
-     Triggers alert if user guesses incorrectly, otherwise update scores and fetch a new dog.
-     */
-    func tryGuess() {
-        // TODO: Implement
-    }
-    
-    /*
      Fetches an image of a new dog from the dog API via GET request.
      */
     func fetchRandomDogImage() {
@@ -35,9 +28,16 @@ class ViewModel: ObservableObject {
     }
     
     /*
-     Resets the game parameters and fetches a new dog.
+     Resets dog related parameters and fetches a new dog.
      */
     func fetchNewDog() {
+        // TODO: Implement
+    }
+    
+    /*
+     Triggers alert if user guesses incorrectly, otherwise update scores and fetch a new dog.
+     */
+    func tryGuess() {
         // TODO: Implement
     }
 }
