@@ -62,6 +62,9 @@ struct HintAndTextField: View {
                 .autocorrectionDisabled()
                 .textInputAutocapitalization(.never)
                 .padding(.horizontal, 50)
+                .onSubmit {
+                    viewModel.tryGuess()
+                }
         }
     }
 }
